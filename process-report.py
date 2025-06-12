@@ -24,8 +24,8 @@ def get_processes():
                 "pid": info['pid'],
                 "name": info['name'] or "N/A",
                 "user": info['username'] or "N/A",
-                "cpu": round(info['cpu_percent'], 2),
-                "memory": round(info['memory_percent'], 2)
+                "cpu": round(info.get('cpu_percent') or 0.0, 2),
+                "memory": round(info['memory_percent'] or 0.0, 2)
             })
         except (psutil.NoSuchProcess, psutil.AccessDenied):
             continue
