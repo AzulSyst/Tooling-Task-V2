@@ -1,0 +1,13 @@
+$ANSI_FG_RED     = "`e[31m"
+$ANSI_FG_GREEN   = "`e[32m"
+$ANSI_FG_YELLOW  = "`e[33m"
+$ANSI_FG_BLUE    = "`e[34m"
+$ANSI_FG_PURPLE  = "`e[35m"
+$ANSI_FG_CYAN    = "`e[36m"
+$ANSI_FG_WHITE   = "`e[97m"
+
+$ANSI_BG_RED     = "`e[41m"
+$ANSI_BG_GREEN   = "`e[42m"
+$ANSI_BG_BLUE    = "`e[44m"
+$ANSI_BG_PURPLE  = "`e[45m"
+$ANSI_OFF        = "`e[0m"
