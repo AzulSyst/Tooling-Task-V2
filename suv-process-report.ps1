@@ -7,9 +7,9 @@ $ErrorActionPreference = "Stop"
 
 # Print system info with color
 Write-Host ""
-Write-Host "${ANSI_BG_BLUE}whoami:${ANSI_OFF}   ${ANSI_BG_PURPLE}$(whoami)${ANSI_OFF}"
-Write-Host "${ANSI_BG_BLUE}hostname:${ANSI_OFF} ${ANSI_BG_PURPLE}$(hostname)${ANSI_OFF}"
-Write-Host "${ANSI_BG_BLUE}pwd:${ANSI_OFF}      ${ANSI_BG_PURPLE}$(Get-Location)${ANSI_OFF}"
+Write-LabelValue "whoami:" (whoami)
+Write-LabelValue "hostname:" (hostname)
+Write-LabelValue "pwd:" (Get-Location)
 
 # Relax error handling (like `set +e`)
 $ErrorActionPreference = "Continue"
