@@ -15,9 +15,25 @@ This cross-platform command-line tool generates a detailed report of running pro
 
 ## 🚀 Installation
 
+### On MacOS
+
+Download the files and switch to the downloaded directory:
 ```bash
-git clone https://github.com/YOUR_USERNAME/process-reporter.git
-cd process-reporter
+git clone https://github.com/AzulSyst/Tooling-Task-V2.git
+cd Tooling-Task-V2
+```
+Activate virtual environment for Python and install required packages:
+```bash
+./suv-venv-activate.sh
+./suv-venv-install-modules.sh
+```
+
+### On Windows and Linux
+
+Download the files, switch to the downloaded directory and install required python packages:
+```bash
+git clone https://github.com/AzulSyst/Tooling-Task-V2.git
+cd Tooling-Task-V2
 pip install -r requirements.txt
 ```
 
@@ -25,29 +41,28 @@ pip install -r requirements.txt
 
 ### On MacOS and Linux
 
-1. Run `./suv-venv-activate.sh` in order to create Virtual Environment for Python
-2. Run `./suv-venv-install-modules.sh` in order to install required packages into the Virtual Environment
-3. Run `./suv-process-report.sh`
+```bash
+./suv-process-report.sh
+```
 
 ### On Windows
 
-1. Execute the following command to enable PowerShell scripts for the current terminal session:  
-`Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process`  
-2. Run `.\suv-process-report.ps1`
-
----
+Enable PowerShell scripts for the current terminal session and then run the `suv-process-report.ps1`:
+```PowerShell
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+.\suv-process-report.ps1
+```
 
 ## Manual Execution
 
 ### Install python dependencies
-```bash
-pip install -r requirements.txt
-```
+
+Mase sure python dependencies are installed as per [Installation](#Installation) instructions.
 
 ### Generate a CSV report:
 
 ```bash
-python process_report.py --output-format csv`
+python process_report.py --output-format csv
 ```
 
 ### Generate a JSON report in a specific path:
