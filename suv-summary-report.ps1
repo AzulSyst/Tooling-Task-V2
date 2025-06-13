@@ -1,10 +1,10 @@
-. "$PSScriptRoot/suv-options.ps1"
-
 # Ensure exactly one argument is passed
 param (
     [Parameter(Mandatory=$true)]
     [string]$InputFile
 )
+
+. "$PSScriptRoot/suv-options.ps1"
 
 # Strict mode equivalent
 Set-StrictMode -Version Latest
