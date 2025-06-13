@@ -25,6 +25,22 @@ pip install -r requirements.txt
 
 ---
 
+## Execution
+
+### On MacOS
+
+1. Run `./suv-venv-activate.sh` in order to create Virtual Environment for Python
+2. Run `./suv-venv-install-modules.sh` in order to install required packages into the Virtual Environment
+3. Run `./suv-process-report.sh`
+
+### On Windows
+
+1. Execute the following command to enable PowerShell scripts for the current terminal session:  
+`Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process`  
+2. Run `.\suv-process-report.ps1`
+
+---
+
 ### Install the dependency
 pip install -r requirements.txt
 
