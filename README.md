@@ -13,6 +13,10 @@ This cross-platform command-line tool generates a detailed report of running pro
 - 🚀 GitHub Actions CI integrated
 - ✅ Mac, Linux and Windows support
 
+## Design Decisions
+
+Python because of simplicity of a task and availability of modules.
+
 ## 🚀 Installation
 
 ### On MacOS
@@ -69,6 +73,15 @@ python process_report.py --output-format csv
 
 ```bash
 python process_report.py --output-format json --output-path C:\Users\YourName\Documents\report.json
+```
+
+---
+
+## Visualization
+
+```bash
+suv-summary-report.sh
+suv-visualize-report.sh
 ```
 
 ---
