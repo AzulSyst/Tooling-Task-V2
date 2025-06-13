@@ -11,6 +11,6 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 # Run Python script
-& $VENV_PYTHON3 $PYTHON_SUMMARY_REPORT_PY $InputFile
+& $VENV_PYTHON3 $SUMMARY_REPORT_PY $InputFile
 
 Write-Host ""
