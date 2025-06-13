@@ -11,9 +11,7 @@ This cross-platform command-line tool generates a detailed report of running pro
 - 📊 Compatible with Excel, Google Sheets, and open-source tools
 - 💻 Works from any directory
 - 🚀 GitHub Actions CI integrated
-- ✅ Mac and Windows support
-
----
+- ✅ Mac, Linux and Windows support
 
 ## 🚀 Installation
 
@@ -23,11 +21,9 @@ cd process-reporter
 pip install -r requirements.txt
 ```
 
----
-
 ## Execution
 
-### On MacOS
+### On MacOS and Linux
 
 1. Run `./suv-venv-activate.sh` in order to create Virtual Environment for Python
 2. Run `./suv-venv-install-modules.sh` in order to install required packages into the Virtual Environment
@@ -41,16 +37,31 @@ pip install -r requirements.txt
 
 ---
 
-### Install the dependency
+## Manual Execution
+
+### Install python dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### Generate a CSV report:
-python process_report.py --output-format csv
+
+```bash
+python process_report.py --output-format csv`
+```
 
 ### Generate a JSON report in a specific path:
-python process_report.py --output-format json --output-path C:\Users\YourName\Documents\report.json
 
-### Tests:
+```bash
+python process_report.py --output-format json --output-path C:\Users\YourName\Documents\report.json
+```
+
+---
+
+## Tests
+
+```bash
 python -m unittest discover
+```
 
 
