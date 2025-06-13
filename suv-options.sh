@@ -15,3 +15,5 @@ GIT_MAIN_BRANCH="main"
 
 PROCESS_REPORT_PY="process-report.py"
 TEST_REPORT_PY="test-report.py"
+VISUALIZE_REPORT_PY="visualize-report.py"
+PYTHON_SUMMARY_REPORT="summary-report.py"
