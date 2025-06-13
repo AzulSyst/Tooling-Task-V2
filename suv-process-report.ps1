@@ -1,5 +1,13 @@
-. "$PSScriptRoot/suv-ansi-colors.ps1"
 . "$PSScriptRoot/suv-options.ps1"
+
+function Write-LabelValue {
+    param (
+        [string]$Label,
+        [string]$Value
+    )
+    Write-Host $Label -BackgroundColor Blue -ForegroundColor White -NoNewline
+    Write-Host " $Value" -BackgroundColor DarkMagenta -ForegroundColor White
+}
 
 # Strict mode equivalent
 Set-StrictMode -Version Latest
