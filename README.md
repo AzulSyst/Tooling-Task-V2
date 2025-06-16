@@ -86,14 +86,14 @@ There are two kind of reports available:
 ### On MacOS and Linux
 
 ```bash
-suv-summary-report.sh   <report_file.csv>
-suv-visualize-report.sh <report_file.csv>
+.\suv-summary-report.sh   <report_file.csv>
+.\suv-visualize-report.sh <report_file.csv>
 ```
 
 ### On Windows
 ```PowerShell
-suv-summary-report.ps1   <report_file.csv>
-suv-visualize-report.ps1 <report_file.csv>
+.\suv-summary-report.ps1   <report_file.csv>
+.\suv-visualize-report.ps1 <report_file.csv>
 ```
 
 ---
