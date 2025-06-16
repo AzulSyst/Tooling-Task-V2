@@ -15,7 +15,7 @@ This cross-platform command-line tool generates a detailed report of running pro
 
 ## Design Decisions
 
-Python because of simplicity of a task and availability of modules.
+Python because of simplicity of the task and availability of libraries designed for the task.
 
 ## 🚀 Installation
 
@@ -79,9 +79,21 @@ python process_report.py --output-format json --output-path C:\Users\YourName\Do
 
 ## Visualization
 
+There are two kind of reports available:
+- CLI-based "summary"  report produced by `suv-summary-report` script
+- GUI-based "extended" report produced by `suv-visualize-report` script
+
+### On MacOS and Linux
+
 ```bash
-suv-summary-report.sh
-suv-visualize-report.sh
+suv-summary-report.sh   <report_file.csv>
+suv-visualize-report.sh <report_file.csv>
+```
+
+### On Windows
+```PowerShell
+suv-summary-report.ps1   <report_file.csv>
+suv-visualize-report.ps1 <report_file.csv>
 ```
 
 ---

@@ -30,10 +30,10 @@ $ErrorActionPreference = "Stop"
 
 # Run the Python visualization script with the provided argument
 if ($args.Count -ne 1) {
-    Write-Host "Usage: suv-summary-report.ps1 <report_file>"
+    Write-Host "Usage: suv-visualize-report.ps1 <report_file>"
     exit 1
 }
-& $VENV_PYTHON3 $SUMMARY_REPORT_PY $args[0]
+& $VENV_PYTHON3 $VISUALIZE_REPORT_PY $args[0]
 
 
 Write-Host ""
