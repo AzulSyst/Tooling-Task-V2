@@ -72,7 +72,7 @@ python process_report.py
 ### Generate a report in a specific path:
 
 ```bash
-python process_report.py --output-path path\to\report.csv
+python process_report.py --output-path pat/to/report.csv
 ```
 
 ---
