@@ -81,7 +81,7 @@ python process_report.py --output-path pat/to/report.csv
 
 Two types of report presentations are available:
 - CLI-based *"summary"* report produced by `suv-summary-report` script
-- GUI-based *"extended"* report produced by `suv-visualize-report` script
+- GUI-based *"visual"* report produced by `suv-visualize-report` script
 
 ### On MacOS and Linux
 

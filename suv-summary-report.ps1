@@ -28,7 +28,7 @@ if (-not ($lines | Where-Object { $_ -match ',' })) {
 # Exit on error
 $ErrorActionPreference = "Stop"
 
-# Run the Python visualization script with the provided argument
+# Run the Python summary script with the provided argument
 & $VENV_PYTHON3 $SUMMARY_REPORT_PY $InputFile
 
 
