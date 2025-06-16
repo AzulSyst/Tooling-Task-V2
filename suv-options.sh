@@ -14,6 +14,6 @@ GIT_FEATURE_BRANCH="dev-feature-branch"
 GIT_MAIN_BRANCH="main"
 
 PROCESS_REPORT_PY="process_report.py"
-TEST_REPORT_PY="test-report.py"
+TEST_REPORT_PY="test_report.py"
 VISUALIZE_REPORT_PY="visualize-report.py"
 PYTHON_SUMMARY_REPORT="summary-report.py"
