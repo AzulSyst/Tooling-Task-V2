@@ -43,7 +43,7 @@ def write_json(data, output_file):
 
 def main():
     parser = argparse.ArgumentParser(description="Generate a report of running processes (Windows/macOS/Linux).")
-    parser.add_argument('--output-format', choices=['csv', 'json'], default='csv', help='Output file format.')
+    parser.add_argument('--output-format', choices=['csv', 'json'], default='csv', help='Output file format (default: csv).')
     parser.add_argument('--output-path', default=None, help='Path to save the output file.')
 
     args = parser.parse_args()

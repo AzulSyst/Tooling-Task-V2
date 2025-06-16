@@ -1,13 +1,13 @@
 # 🛠️ Process Reporter CLI Tool
 
-This cross-platform command-line tool generates a detailed report of running processes on your system in CSV or JSON format. Ideal for performance monitoring, security auditing, or user-specific activity insights.
+This cross-platform command-line tool generates a detailed report of running processes on your system in CSV format. Ideal for performance monitoring, security auditing, or user-specific activity insights.
 
 ---
 
 ## 📦 Features
 
 - 🧠 Lists process name, PID, user, CPU and memory usage
-- 📄 Outputs CSV or JSON
+- 📄 Outputs CSV
 - 📊 Compatible with Excel, Google Sheets, and open-source tools
 - 💻 Works from any directory
 - 🚀 GitHub Actions CI integrated
@@ -15,7 +15,7 @@ This cross-platform command-line tool generates a detailed report of running pro
 
 ## Design Decisions
 
-Python because of simplicity of the task and availability of libraries designed for the task.
+Python was chosen for its simplicity and the rich ecosystem of libraries that facilitate system process inspection and CSV reporting.
 
 ## 🚀 Installation
 
@@ -66,13 +66,13 @@ Mase sure python dependencies are installed as per [Installation](#Installation)
 ### Generate a CSV report:
 
 ```bash
-python process_report.py --output-format csv
+python process_report.py
 ```
 
-### Generate a JSON report in a specific path:
+### Generate a report in a specific path:
 
 ```bash
-python process_report.py --output-format json --output-path C:\Users\YourName\Documents\report.json
+python process_report.py --output-path path\to\report.csv
 ```
 
 ---
