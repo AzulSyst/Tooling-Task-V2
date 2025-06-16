@@ -86,11 +86,13 @@ Two types of report presentations are available:
 ### On MacOS and Linux
 
 ```bash
-.\suv-summary-report.sh   <report_file.csv>
-.\suv-visualize-report.sh <report_file.csv>
+
+./suv-summary-report.sh   <report_file.csv>
+./suv-visualize-report.sh <report_file.csv>
 ```
 
 ### On Windows
+
 ```PowerShell
 .\suv-summary-report.ps1   <report_file.csv>
 .\suv-visualize-report.ps1 <report_file.csv>
@@ -100,8 +102,15 @@ Two types of report presentations are available:
 
 ## Tests
 
+### On MacOS and Linux
+
 ```bash
-python -m unittest discover
+./suv-test-report.sh
 ```
 
+### On Windows
+
+```PowerShell
+.\suv-test-report.ps1
+```
 
