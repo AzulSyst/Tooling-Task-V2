@@ -100,7 +100,17 @@ Two types of report presentations are available:
 
 ---
 
-## Tests
+### Unit Tests
+
+You can run Python's built-in unittest framework in order to discover and run all the test cases:
+
+```bash
+python -m unittest discover
+```
+
+---
+
+## Manual Tests
 
 ### On MacOS and Linux
 
@@ -113,4 +123,5 @@ Two types of report presentations are available:
 ```PowerShell
 .\suv-test-report.ps1
 ```
+
 
