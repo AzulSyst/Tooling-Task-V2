@@ -4,20 +4,20 @@ This cross-platform command-line tool generates a detailed report of running pro
 
 ---
 
-## 📦 Features
+## Features
 
-- 🧠 Lists process name, PID, user, CPU and memory usage
-- 📄 Outputs CSV
-- 📊 Compatible with Excel, Google Sheets, and open-source tools
-- 💻 Works from any directory
-- 🚀 GitHub Actions CI integrated
-- ✅ Mac, Linux and Windows support
+- Lists process name, PID, user, CPU and memory usage
+- Outputs CSV
+- Compatible with Excel, Google Sheets, and open-source tools
+- Works from any directory
+- GitHub Actions CI integrated
+- Mac, Linux and Windows support
 
 ## Design Decisions
 
 Python was chosen for its simplicity and the rich ecosystem of libraries that facilitate system process inspection and CSV reporting.
 
-## 🚀 Installation
+## Installation
 
 ### On MacOS
 
@@ -34,7 +34,7 @@ Activate virtual environment for Python and install required packages:
 
 ### On Windows and Linux
 
-Download the files, switch to the downloaded directory and install required python packages:
+Download the files, switch to the downloaded directory and install required Python packages:
 ```bash
 git clone https://github.com/AzulSyst/Tooling-Task-V2.git
 cd Tooling-Task-V2
@@ -61,7 +61,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 ### Install python dependencies
 
-Mase sure python dependencies are installed as per [Installation](#Installation) instructions.
+Make sure Python dependencies are installed as per [Installation](#Installation) instructions.
 
 ### Generate a CSV report:
 
@@ -69,7 +69,7 @@ Mase sure python dependencies are installed as per [Installation](#Installation)
 python process_report.py
 ```
 
-### Generate a report in a specific path:
+### Generate a report to a specific path:
 
 ```bash
 python process_report.py --output-path pat/to/report.csv
@@ -102,7 +102,7 @@ Two types of report presentations are available:
 
 ### Unit Tests
 
-You can run Python's built-in unittest framework in order to discover and run all the test cases:
+You can run Python's built-in **unittest** framework in order to discover and run all the test cases:
 
 ```bash
 python -m unittest discover
