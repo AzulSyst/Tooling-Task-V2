@@ -5,7 +5,7 @@ def summarize(csv_file):
     # Load CSV
     df = pd.read_csv(csv_file)
 
-    print("\n📋 Full Data Preview (Top 10 rows):")
+    print("\nFull Data Preview (Top 10 rows):")
     print(df.head(10).to_string(index=False))  # neat terminal formatting
 
     # Total number of processes per user
