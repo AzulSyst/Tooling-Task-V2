@@ -7,21 +7,21 @@ param (
 . "$PSScriptRoot/suv-options.ps1"
 
 # Check if the report file exists
-if (-not (Test-Path $args[0])) {
-    Write-Host "Error: Report file '$($args[0])' does not exist."
+if (-not (Test-Path $InputFile)) {
+    Write-Host "Error: Report file '$InputFile' does not exist."
     exit 1
 }
 
 # Check if the report file is empty
-if ((Get-Item $args[0]).Length -eq 0) {
-    Write-Host "Error: Report file '$($args[0])' is empty."
+if ((Get-Item $InputFile).Length -eq 0) {
+    Write-Host "Error: Report file '$InputFile' is empty."
     exit 1
 }
 
 # Check if the report file appears to be a valid CSV file (has at least one comma-separated line)
-$lines = Get-Content $args[0]
+$lines = Get-Content $InputFile
 if (-not ($lines | Where-Object { $_ -match ',' })) {
-    Write-Host "Error: Report file '$($args[0])' does not appear to be a valid CSV file."
+    Write-Host "Error: Report file '$InputFile' does not appear to be a valid CSV file."
     exit 1
 }
 
@@ -29,11 +29,7 @@ if (-not ($lines | Where-Object { $_ -match ',' })) {
 $ErrorActionPreference = "Stop"
 
 # Run the Python visualization script with the provided argument
-if ($args.Count -ne 1) {
-    Write-Host "Usage: suv-visualize-report.ps1 <report_file>"
-    exit 1
-}
-& $VENV_PYTHON3 $VISUALIZE_REPORT_PY $args[0]
+& $VENV_PYTHON3 $VISUALIZE_REPORT_PY $InputFile
 
 
 Write-Host ""
