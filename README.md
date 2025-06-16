@@ -100,7 +100,7 @@ Two types of report presentations are available:
 
 ---
 
-### Unit Tests
+## Unit Tests
 
 You can run Python's built-in **unittest** framework in order to discover and run all the test cases:
 
